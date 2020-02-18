@@ -1,0 +1,177 @@
+# piptools: python3only
+
+
+# Dispatching system for parties to subscribe to events
+# Supports per-endpoint timing in flask
+# License: MIT
+# Upstream url: https://pypi.python.org/pypi/blinker
+blinker==1.4
+
+# Coroutine-based network library
+# License: MIT
+# Upstream url: http://www.gevent.org/
+gevent==1.2.2
+
+# Lightweight in-process concurrent programming
+# License: MIT
+# Upstream url: https://github.com/python-greenlet/greenlet
+greenlet==0.4.12
+
+# WSGI HTTP Server for UNIX
+# License: MIT
+# Upstream url: https://github.com/lyft/gunicorn
+-e git+https://github.com/lyft/gunicorn@lyft_19.60_fixes_1#egg=gunicorn
+
+# Testing library
+# License: MIT
+# Upstream url: https://github.com/pytest-dev/pytest
+pytest==3.6.3
+
+# Thin-wrapper around the mock package for easier use with py.test
+# License: MIT
+# Upstream url: https://github.com/pytest-dev/pytest-mock/
+pytest-mock==1.10.0
+
+# Code coverage plugin for py.test
+# License: MIT
+# Upstream url: https://github.com/pytest-dev/pytest-cov
+pytest-cov==2.5.1
+
+# Flask service framework
+# License: BSD
+# Upstream url: http://github.com/mitsuhiko/flask/
+Flask==1.0.2
+
+# Werkzeug: The comprehensive WSGI web application library
+# License: BSD
+# https://github.com/pallets/werkzeug
+werkzeug==0.15.5
+
+# Scripting support for Flask
+# License: BSD
+# Upstream url: http://github.com/techniq/flask-script
+Flask-Script==2.0.5
+
+# Cross Origin Resource Sharing (CORS) support for Flask
+# License: MIT
+# Upstream url: https://github.com/corydolphin/flask-cors
+flask-cors==3.0.3
+
+flask-restful==0.3.5
+
+# A Python library of common idioms used in Lyft microservices
+# License: N/A
+# Upstream url: https://github.com/lyft/python-lyft-stdlib/
+lyft-stdlib==1011.0.0
+
+# A Python Client for accessing regional configuration data from regions service by lat/lng.
+# License: N/A
+# Upstream url: https://github.com/lyft/python-regions-client
+lyft-regions-client==4.13.4
+
+# A Python library of request client and helper modules for Lyft
+# License: N/A
+# Upstream url: https://github.com/lyft/python-lyft-requests
+lyft-requests==1.10.2
+
+# Python Library providing a typed interface to environment variables
+# License: N/A
+# Upstream url: https://github.com/lyft/python-lyft-settings/
+lyft-settings==0.3.0
+
+# Localization library that handles geo, currency, and locale related utils
+# License: N/A
+# Upstream url: https://github.com/lyft/python-lyft-localization
+lyft-localization==15.2.0
+
+# The Lyft protobuf classes
+# License: N/A
+# Upstream url: https://github.com/lyft/lyft-idl/
+lyft-idl
+
+# The Lyft Elasticsearch library
+# License: N/A
+# Upstream url: https://github.com/lyft/python-lyft-elasticsearch/
+lyft-elasticsearch==2.2.1
+
+## Publicapi lib
+lyft-public-api-lib==0.41.0
+
+# A pythonic interface to Amazon's DynamoDB
+# License: MIT
+# Upstream url: https://github.com/jlafon/PynamoDB
+pynamodb
+
+# YAML parser and emitter for Python
+# License: MIT
+# Upstream url: http://pyyaml.org/wiki/PyYAML
+PyYAML==3.12
+
+# A wrapper around gunicorn to handle graceful restarts correctly
+# License: BSD
+# Upstream url: https://github.com/lyft/rainbow-saddle
+rainbow-saddle>=0.4.0
+
+# A simple statsd client.
+# License: MIT
+# Upstream url: https://github.com/jsocol/pystatsd
+statsd==3.2.1
+
+# Lyft's Stats Library. It provides utilities for interacting with statsd.
+#License: N/A
+#Upstream url: https://github.com/lyft/python-lyft-stats
+lyft-stats==1.2.4
+
+# Lyft Logging Library, provides interacting with logging ingestion
+# License: N/A
+# Upstream url: https://github.com/lyft/python-lyft-logging
+lyft-logging==0.8.0
+
+# analytics client, for event validation
+analyticsclient==1.594.0
+
+# Serialization / schema validation library
+# License: MIT
+# Upstream url: https://github.com/marshmallow-code/marshmallow
+marshmallow==3.0.0b8
+
+# Request parsing for flask using marshmallow
+# License: MIT
+# Upstream url: https://github.com/sloria/webargs
+webargs==5.3.0
+
+Pillow==5.0.0
+boto==2.48.0
+
+# Test library for handling time
+# License: Apache 2.0
+# Upstream url: https://github.com/spulec/freezegun
+freezegun==0.3.10
+
+# Redis caching library
+redis==2.10.6
+
+# Python wrapper for redis
+# WARNING from lyft/nutcracker_client to install hiredis
+hiredis==0.2.0
+
+# iterative JSON parser
+ijson==2.3.0
+
+# Google Cloud BigQuery
+# License: Apache 2.0
+# Upstream url: https://github.com/googleapis/google-cloud-python
+google-cloud-bigquery==1.6.0
+
+# Upstream url: https://github.com/lyft/python-lyft-vehicles
+lyft-vehicles==2.3.0
+
+# Python library for ingesting analytics
+# License: N/A
+# Upstream url: https://github.com/lyft/python-lyft-ingest
+lyft-ingest
+
+# Python library for testing Lyft analytics using pytest
+# License: N/A
+# Upstream url: https://github.com/lyft/pytest-lyft-analytics
+pytest-lyft-analytics>=3.0.0

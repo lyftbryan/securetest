@@ -1,0 +1,233 @@
+name: vehiclemetadata
+description: The vehiclemetadata service is the source of truth on vehicle makes and models.
+repository: git@github.com:lyft/vehiclemetadata.git
+image_type: service
+service_tier: 1
+slack: '#do-funnel-eng'
+team_email: do-funnel@lyft.com
+pagerduty_escalation_policy: Driver Applicant Onboarding
+languages:
+  - bash
+  - python
+credentials: true
+containers:
+  - name: legacy
+    command: /code/ops/base/entrypoint.sh
+    provision: /code/ops/base/starters/post_starters.sh
+    exports:
+      - name: api
+        port: 8080
+  - name: service
+    command: dumb-init -- service_venv gunicorn wsgi:app --workers=2 -k gevent -c /etc/gunicorn/gunicorn.conf
+    workdir: /code/vehiclemetadata
+    sub_image: k8s
+    liveness_probe:
+      exec_probe:
+        command:
+          - gunicorn_healthcheck
+      period_seconds: 10
+      initial_delay_seconds: 10
+    readiness_probe:
+      exec_probe:
+        command:
+          - gunicorn_healthcheck
+      period_seconds: 1
+      initial_delay_seconds: 10
+    limits:
+      cpu: 1
+      memory: 1Gi
+  - name: syncevoxcarselect
+    command: dumb-init -- service_venv python app/scripts/run_cron.py python manage.py sync_evox_carselect
+    workdir: /code/vehiclemetadata
+    sub_image: k8s
+  - name: syncevoxphotos
+    command: dumb-init -- service_venv python app/scripts/run_cron.py python manage.py sync_evox_photos
+    workdir: /code/vehiclemetadata
+    sub_image: k8s
+  - name: manage
+    command: dumb-init -- service_venv python manage.py
+    workdir: /code/vehiclemetadata
+    sub_image: k8s
+facets:
+  - name: main
+    member: vehiclemetadata.service
+    type: service
+    autoscaling:
+      environment:
+        staging:
+          min_size: 1
+          max_size: 3
+        production:
+          min_size: 2
+          max_size: 5
+  - name: canary
+    member: vehiclemetadata.service
+    type: service
+    canary: true
+    autoscaling:
+      min_size: 1
+      max_size: 1
+  - name: syncevoxcarselect
+    member: vehiclemetadata.syncevoxcarselect
+    type: cron
+    schedule: 0 20 * * 1,3,5
+    concurrency_policy: Forbid
+  - name: syncevoxphotos
+    member: vehiclemetadata.syncevoxphotos
+    type: cron
+    schedule: 0 20 * * 2,4
+    concurrency_policy: Forbid
+  # Usage: lyftkube batch run manage -p vehiclemetadata -a [manage_script_name]
+  # Further Docs: https://github.com/lyft/lyftkube#lyftkube-batch-run
+  - name: manage
+    member: vehiclemetadata.manage
+    type: batch
+builder:
+  name: multi
+  params:
+    builders:
+      - name: s2iplus
+        params:
+          builder: lyft/opsbase:6e3de64c33138f6aa0b19e79f23b1d35a89d6e6a
+          packages:
+            - libspatialindex-dev
+      - name: s2i
+        params:
+          builder: lyft/s2ipython3:3258c1df880d24734bd34f6704fc48e8ae774688
+          sub_image: k8s
+      - name: s2i
+        params:
+          builder: lyft/precommit:d9242ea1d4a70199a8bb8cd0584739e8d37fb129
+          sub_image: precommit
+groups:
+  - name: dev
+    members:
+      - control.dev
+      - redis.dev
+      - dynamodb.server
+      - dynamostreams.dev
+      - vehiclemetadata.legacy
+tests:
+  - name: startup
+    type: startup
+    group: vehiclemetadata.dev
+  - name: precommit
+    type: jailed
+    sub_image: precommit
+    command: pre-commit run --all-files --show-diff-on-failure
+  - name: unit
+    type: jailed
+    framework: pytest
+    markers: not unit_legacy
+  - name: unit_legacy
+    type: execution
+    container: vehiclemetadata.legacy
+    group: vehiclemetadata.dev
+    framework: pytest
+    coverage: false
+    targets:
+      - tests/unit
+    virtualenv: service_venv
+    markers: unit_legacy
+upstream_tests:
+  on_commit: true
+  test_set:
+    ats:
+      - e2e
+deploy:
+  - name: staging
+    legacy: false
+    automatic: true
+    targets:
+      - facet: main
+      - facet: manage
+    kubernetes:
+      enabled: true
+    orca:
+      - region: iad
+  - name: canary
+    legacy: false
+    targets:
+      - facet: canary
+    kubernetes:
+      enabled: true
+    orca:
+      - region: iad
+  -   - name: production-us-east-1a
+        legacy: false
+        targets:
+          - facet: main
+        kubernetes:
+          enabled: true
+        availability_zone: us-east-1a
+      - name: production-us-east-1d
+        legacy: false
+        targets:
+          - facet: main
+        kubernetes:
+          enabled: true
+        availability_zone: us-east-1d
+  - name: production
+    targets:
+      - facet: main
+      - facet: canary
+      - facet: syncevoxcarselect
+      - facet: syncevoxphotos
+      - facet: manage
+    kubernetes:
+      enabled: true
+    legacy: false
+pulldeploy_components:
+  data:
+    - translationdata
+    - regioncfgdata
+envoy:
+  profile: python
+  settings:
+    services:
+      - name: vehiclemetadata
+      - name: vehiclemetadatabatch
+    common_settings:
+      local_service:
+        circuit_breakers:
+          default:
+            max_connections: 100
+        hosts_url: tcp://127.0.0.1:8080
+        ingress_ports: [9211, 80]
+      internal_hosts:
+        ats: {tls_enabled: true}
+        jobschedulerbulkweb: {tls_enabled: true}
+        jobschedulernormalweb: {tls_enabled: true}
+        regions: {tls_enabled: true}
+        supply: {tls_enabled: true}
+        tcs: {tls_enabled: true}
+      external_hosts:
+        dynamodb_iad: null
+        nhtsa_api: null
+        firehose_iad: null
+      redis:
+        vehiclemetadatamultiredis:
+          port: 6380
+
+logging:
+  vehiclemetadata:
+    fields:
+      lyft_id: keyword
+      carselect:
+        vin: keyword
+      error: keyword
+      exception: keyword
+      prop: keyword
+      input_vin: keyword
+      year: long
+      make: keyword
+      model: keyword
+      count: long
+      url: keyword
+      status_code: long
+      value: keyword
+  vehiclemetadatabatch:
+    fields:
+      command: keyword
+      cron_uuid: keyword
+      attempt: long
