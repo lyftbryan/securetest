@@ -82,7 +82,7 @@ pyasn1==0.4.8             # via pyasn1-modules, rsa
 pycountry==19.8.18        # via lyft-localization
 pynamodb==4.3.1
 pyrsistent==0.15.7        # via jsonschema
-pytest-cov==2.5.1
+pytest-cov==2.8.1
 pytest-lyft-analytics==4.2.4
 pytest-mock==1.10.0
 pytest==3.6.3
