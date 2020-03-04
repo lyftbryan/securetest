@@ -43,7 +43,7 @@ grpcio-tools==1.27.2      # via lyft-idl, lyft-requests
 grpcio==1.27.2            # via grpcio-tools
 hiredis==1.0.1
 humanize==1.0.0           # via delorean
-idna==2.8                 # via requests
+idna==2.9                 # via requests
 ijson==2.3.0
 importlib-metadata==0.23  # via jsonschema
 itsdangerous==1.1.0       # via flask
