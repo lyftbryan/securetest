@@ -99,7 +99,7 @@ shapely==1.7.0      # via lyft-regions-client
 six==1.14.0               # via analyticsclient, flask-cors, flask-restful, freezegun, google-api-core, google-auth, google-resumable-media, grpcio, jsonschema, lyft-datetime, lyft-elasticsearch, lyft-idl, lyft-ingest, lyft-localization, lyft-logging, lyft-regions-client, lyft-requests, lyft-s3, lyft-stdlib, protobuf, pynamodb, pyrsistent, pytest, python-dateutil
 statsd==3.3.0
 typing-extensions==3.7.4.2  # via lyft-requests
-tzlocal==2.0.0            # via delorean
+tzlocal==2.1            # via delorean
 ujson==2.0.3               # via lyft-ingest, lyft-stdlib
 urllib3==1.25.9           # via botocore, elasticsearch, lyft-elasticsearch, lyft-ingest, requests
 webargs==6.1.0
