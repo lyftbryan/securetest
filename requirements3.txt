@@ -48,7 +48,7 @@ ijson==3.0.4
 importlib-metadata==1.6.0  # via jsonschema
 itsdangerous==1.1.0       # via flask
 jinja2==2.11.2            # via flask
-jmespath==0.9.5           # via boto3, botocore
+jmespath==0.10.0           # via boto3, botocore
 jsonschema==3.2.0         # via lyft-regions-client
 lyft-datetime==1.0.4      # via lyft-ingest, lyft-streamcheck
 lyft-elasticsearch==2.2.1
