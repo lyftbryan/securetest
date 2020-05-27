@@ -11,9 +11,9 @@ atomicwrites==1.4.0       # via pytest
 attrs==19.3.0             # via jsonschema, pytest
 babel==2.8.0              # via delorean, lyft-localization
 blinker==1.4
-boto3==1.13.17            # via lyft-ingest, lyft-s3, lyft-streamcheck
+boto3==1.13.18            # via lyft-ingest, lyft-s3, lyft-streamcheck
 boto==2.49.0
-botocore==1.16.17         # via boto3, lyft-elasticsearch, pynamodb, s3transfer
+botocore==1.16.18         # via boto3, lyft-elasticsearch, pynamodb, s3transfer
 cachetools==4.1.0         # via google-auth, lyft-public-api-lib
 certifi==2020.4.5.1        # via requests
 chardet==3.0.4            # via requests
