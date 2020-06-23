@@ -40,7 +40,7 @@ google-resumable-media==0.5.1  # via google-cloud-bigquery
 googleapis-common-protos==1.52.0  # via google-api-core, lyft-idl
 greenlet==0.4.16
 grpcio-tools==1.29.0      # via lyft-idl, lyft-requests
-grpcio==1.29.0            # via grpcio-tools
+grpcio==1.30.0            # via grpcio-tools
 hiredis==1.0.1
 humanize==2.4.0           # via delorean
 idna==2.9                 # via requests
