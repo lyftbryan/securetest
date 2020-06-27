@@ -42,7 +42,7 @@ greenlet==0.4.16
 grpcio-tools==1.30.0      # via lyft-idl, lyft-requests
 grpcio==1.30.0            # via grpcio-tools
 hiredis==1.0.1
-humanize==2.4.0           # via delorean
+humanize==2.4.1           # via delorean
 idna==2.9                 # via requests
 ijson==3.1.post0
 importlib-metadata==1.7.0  # via jsonschema
