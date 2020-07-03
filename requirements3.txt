@@ -79,7 +79,7 @@ psutil==5.7.0             # via rainbow-saddle
 py==1.9.0                 # via pytest
 pyasn1-modules==0.2.8     # via google-auth
 pyasn1==0.4.8             # via pyasn1-modules, rsa
-pycountry==20.7.2        # via lyft-localization
+pycountry==20.7.3        # via lyft-localization
 pynamodb==4.3.2
 pyrsistent==0.16.0        # via jsonschema
 pytest-cov==2.10.0
