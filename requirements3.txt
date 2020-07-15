@@ -41,7 +41,7 @@ googleapis-common-protos==1.52.0  # via google-api-core, lyft-idl
 greenlet==0.4.16
 grpcio-tools==1.30.0      # via lyft-idl, lyft-requests
 grpcio==1.30.0            # via grpcio-tools
-hiredis==1.0.1
+hiredis==1.1.0
 humanize==2.5.0           # via delorean
 idna==2.10                 # via requests
 ijson==3.1.post0
