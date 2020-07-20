@@ -68,7 +68,7 @@ lyft-stdlib==1011.0.0
 lyft-streamcheck==0.2.15  # via lyft-ingest
 lyft-vehicles==2.3.0
 markupsafe==1.1.1         # via jinja2
-marshmallow==3.7.0
+marshmallow==3.7.1
 more-itertools==8.4.0     # via pytest, zipp
 parse-accept-language==0.1.2  # via lyft-localization
 phonenumbers==8.12.6     # via lyft-localization
