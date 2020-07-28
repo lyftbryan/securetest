@@ -85,7 +85,7 @@ pyrsistent==0.16.0        # via jsonschema
 pytest-cov==2.10.0
 pytest-lyft-analytics==4.2.4
 pytest-mock==3.2.0
-pytest==5.4.3
+pytest==6.0.0
 python-dateutil==2.8.1    # via botocore, delorean, freezegun, lyft-regions-client, pynamodb
 pytz==2020.1              # via babel, delorean, flask-restful, google-api-core, lyft-ingest, lyft-regions-client, tzlocal
 pyyaml==5.3.1
