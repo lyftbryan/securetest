@@ -80,7 +80,7 @@ py==1.9.0                 # via pytest
 pyasn1-modules==0.2.8     # via google-auth
 pyasn1==0.4.8             # via pyasn1-modules, rsa
 pycountry==20.7.3        # via lyft-localization
-pynamodb==4.3.2
+pynamodb==4.3.3
 pyrsistent==0.16.0        # via jsonschema
 pytest-cov==2.10.1
 pytest-lyft-analytics==4.2.4
