@@ -8,7 +8,7 @@
 analyticsclient==1.594.0
 aniso8601==8.0.0          # via flask-restful
 atomicwrites==1.4.0       # via pytest
-attrs==19.3.0             # via jsonschema, pytest
+attrs==20.1.0             # via jsonschema, pytest
 babel==2.8.0              # via delorean, lyft-localization
 blinker==1.4
 boto3==1.14.46            # via lyft-ingest, lyft-s3, lyft-streamcheck
