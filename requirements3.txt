@@ -30,7 +30,7 @@ flask-protobuf==0.8.0     # via lyft-idl
 flask-restful==0.3.8
 flask-script==2.0.6
 flask==1.1.2
-freezegun==0.3.15
+freezegun==1.0.0
 gevent==20.6.2
 google-api-core==1.22.2   # via google-cloud-bigquery, google-cloud-core
 google-auth==1.21.1        # via google-api-core
