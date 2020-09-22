@@ -38,7 +38,7 @@ google-cloud-bigquery==1.27.2
 google-cloud-core==1.4.1  # via google-cloud-bigquery
 google-resumable-media==1.0.0  # via google-cloud-bigquery
 googleapis-common-protos==1.52.0  # via google-api-core, lyft-idl
-greenlet==0.4.16
+greenlet==0.4.17
 grpcio-tools==1.32.0      # via lyft-idl, lyft-requests
 grpcio==1.32.0            # via grpcio-tools
 hiredis==1.1.0
