@@ -44,7 +44,7 @@ grpcio==1.32.0            # via grpcio-tools
 hiredis==1.1.0
 humanize==2.6.0           # via delorean
 idna==2.10                 # via requests
-ijson==3.1.1
+ijson==3.1.2
 importlib-metadata==2.0.0  # via jsonschema
 itsdangerous==1.1.0       # via flask
 jinja2==2.11.2            # via flask
