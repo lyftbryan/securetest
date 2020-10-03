@@ -104,7 +104,7 @@ ujson==3.2.0               # via lyft-ingest, lyft-stdlib
 urllib3==1.25.10           # via botocore, elasticsearch, lyft-elasticsearch, lyft-ingest, requests
 webargs==6.1.1
 werkzeug==1.0.1
-zipp==3.2.0               # via importlib-metadata
+zipp==3.3.0               # via importlib-metadata
 
 pip==20.2.3
 setuptools==50.3.0
