@@ -11,9 +11,9 @@ atomicwrites==1.4.0       # via pytest
 attrs==20.2.0             # via jsonschema, pytest
 babel==2.8.0              # via delorean, lyft-localization
 blinker==1.4
-boto3==1.16.6            # via lyft-ingest, lyft-s3, lyft-streamcheck
+boto3==1.16.7            # via lyft-ingest, lyft-s3, lyft-streamcheck
 boto==2.49.0
-botocore==1.19.6         # via boto3, lyft-elasticsearch, pynamodb, s3transfer
+botocore==1.19.7         # via boto3, lyft-elasticsearch, pynamodb, s3transfer
 cachetools==4.1.1         # via google-auth, lyft-public-api-lib
 certifi==2020.6.20        # via requests
 chardet==3.0.4            # via requests
@@ -39,8 +39,8 @@ google-cloud-core==1.4.3  # via google-cloud-bigquery
 google-resumable-media==1.1.0  # via google-cloud-bigquery
 googleapis-common-protos==1.52.0  # via google-api-core, lyft-idl
 greenlet==0.4.17
-grpcio-tools==1.33.1      # via lyft-idl, lyft-requests
-grpcio==1.33.1            # via grpcio-tools
+grpcio-tools==1.33.2      # via lyft-idl, lyft-requests
+grpcio==1.33.2            # via grpcio-tools
 hiredis==1.1.0
 humanize==3.1.0           # via delorean
 idna==2.10                 # via requests
