@@ -8,12 +8,12 @@
 analyticsclient==1.594.0
 aniso8601==8.0.0          # via flask-restful
 atomicwrites==1.4.0       # via pytest
-attrs==20.2.0             # via jsonschema, pytest
+attrs==20.3.0             # via jsonschema, pytest
 babel==2.8.0              # via delorean, lyft-localization
 blinker==1.4
-boto3==1.16.10            # via lyft-ingest, lyft-s3, lyft-streamcheck
+boto3==1.16.13            # via lyft-ingest, lyft-s3, lyft-streamcheck
 boto==2.49.0
-botocore==1.19.10         # via boto3, lyft-elasticsearch, pynamodb, s3transfer
+botocore==1.19.13         # via boto3, lyft-elasticsearch, pynamodb, s3transfer
 cachetools==4.1.1         # via google-auth, lyft-public-api-lib
 certifi==2020.6.20        # via requests
 chardet==3.0.4            # via requests
@@ -34,7 +34,7 @@ freezegun==1.0.0
 gevent==20.9.0
 google-api-core==1.23.0   # via google-cloud-bigquery, google-cloud-core
 google-auth==1.23.0        # via google-api-core
-google-cloud-bigquery==2.2.0
+google-cloud-bigquery==2.3.1
 google-cloud-core==1.4.3  # via google-cloud-bigquery
 google-resumable-media==1.1.0  # via google-cloud-bigquery
 googleapis-common-protos==1.52.0  # via google-api-core, lyft-idl
