@@ -6,7 +6,7 @@
 #
 -e git+https://github.com/lyft/gunicorn@lyft_19.60_fixes_1#egg=gunicorn
 analyticsclient==1.594.0
-aniso8601==8.0.0          # via flask-restful
+aniso8601==8.1.0          # via flask-restful
 atomicwrites==1.4.0       # via pytest
 attrs==20.3.0             # via jsonschema, pytest
 babel==2.9.0              # via delorean, lyft-localization
