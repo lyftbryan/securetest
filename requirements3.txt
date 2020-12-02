@@ -34,13 +34,13 @@ freezegun==1.0.0
 gevent==20.9.0
 google-api-core==1.23.0   # via google-cloud-bigquery, google-cloud-core
 google-auth==1.23.0        # via google-api-core
-google-cloud-bigquery==2.4.0
+google-cloud-bigquery==2.5.0
 google-cloud-core==1.4.4  # via google-cloud-bigquery
 google-resumable-media==1.1.0  # via google-cloud-bigquery
 googleapis-common-protos==1.52.0  # via google-api-core, lyft-idl
 greenlet==0.4.17
 grpcio-tools==1.33.2      # via lyft-idl, lyft-requests
-grpcio==1.33.2            # via grpcio-tools
+grpcio==1.34.0            # via grpcio-tools
 hiredis==1.1.0
 humanize==3.1.0           # via delorean
 idna==2.10                 # via requests
