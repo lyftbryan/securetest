@@ -35,7 +35,7 @@ gevent==20.9.0
 google-api-core==1.23.0   # via google-cloud-bigquery, google-cloud-core
 google-auth==1.23.0        # via google-api-core
 google-cloud-bigquery==2.4.0
-google-cloud-core==1.4.3  # via google-cloud-bigquery
+google-cloud-core==1.4.4  # via google-cloud-bigquery
 google-resumable-media==1.1.0  # via google-cloud-bigquery
 googleapis-common-protos==1.52.0  # via google-api-core, lyft-idl
 greenlet==0.4.17
