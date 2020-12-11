@@ -14,7 +14,7 @@ blinker==1.4
 boto3==1.16.34            # via lyft-ingest, lyft-s3, lyft-streamcheck
 boto==2.49.0
 botocore==1.19.34         # via boto3, lyft-elasticsearch, pynamodb, s3transfer
-cachetools==4.1.1         # via google-auth, lyft-public-api-lib
+cachetools==4.2.0         # via google-auth, lyft-public-api-lib
 certifi==2020.12.5        # via requests
 chardet==4.0.0            # via requests
 ciso8601==2.1.3           # via lyft-datetime, lyft-ingest
