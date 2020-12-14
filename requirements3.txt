@@ -102,7 +102,7 @@ typing-extensions==3.7.4.3  # via lyft-requests
 tzlocal==2.1            # via delorean
 ujson==4.0.1               # via lyft-ingest, lyft-stdlib
 urllib3==1.26.2           # via botocore, elasticsearch, lyft-elasticsearch, lyft-ingest, requests
-webargs==7.0.0
+webargs==7.0.1
 werkzeug==1.0.1
 zipp==3.4.0               # via importlib-metadata
 
