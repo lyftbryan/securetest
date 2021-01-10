@@ -84,7 +84,7 @@ pynamodb==4.3.3
 pyrsistent==0.17.3        # via jsonschema
 pytest-cov==2.10.1
 pytest-lyft-analytics==4.2.4
-pytest-mock==3.5.0
+pytest-mock==3.5.1
 pytest==6.2.1
 python-dateutil==2.8.1    # via botocore, delorean, freezegun, lyft-regions-client, pynamodb
 pytz==2020.5              # via babel, delorean, flask-restful, google-api-core, lyft-ingest, lyft-regions-client, tzlocal
