@@ -11,9 +11,9 @@ atomicwrites==1.4.0       # via pytest
 attrs==20.3.0             # via jsonschema, pytest
 babel==2.9.0              # via delorean, lyft-localization
 blinker==1.4
-boto3==1.16.56            # via lyft-ingest, lyft-s3, lyft-streamcheck
+boto3==1.16.57            # via lyft-ingest, lyft-s3, lyft-streamcheck
 boto==2.49.0
-botocore==1.19.56         # via boto3, lyft-elasticsearch, pynamodb, s3transfer
+botocore==1.19.57         # via boto3, lyft-elasticsearch, pynamodb, s3transfer
 cachetools==4.2.0         # via google-auth, lyft-public-api-lib
 certifi==2020.12.5        # via requests
 chardet==4.0.0            # via requests
@@ -88,7 +88,7 @@ pytest-mock==3.5.1
 pytest==6.2.1
 python-dateutil==2.8.1    # via botocore, delorean, freezegun, lyft-regions-client, pynamodb
 pytz==2020.5              # via babel, delorean, flask-restful, google-api-core, lyft-ingest, lyft-regions-client, tzlocal
-pyyaml==5.3.1
+pyyaml==5.4
 rainbow-saddle==0.4.0
 redis==3.5.3
 requests==2.25.1          # via google-api-core, lyft-elasticsearch, lyft-idl, lyft-ratelimit, lyft-requests
