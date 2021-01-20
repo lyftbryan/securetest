@@ -31,7 +31,7 @@ flask-restful==0.3.8
 flask-script==2.0.6
 flask==1.1.2
 freezegun==1.1.0
-gevent==21.1.1
+gevent==21.1.2
 google-api-core==1.25.0   # via google-cloud-bigquery, google-cloud-core
 google-auth==1.24.0        # via google-api-core
 google-cloud-bigquery==2.6.2
@@ -88,7 +88,7 @@ pytest-mock==3.5.1
 pytest==6.2.1
 python-dateutil==2.8.1    # via botocore, delorean, freezegun, lyft-regions-client, pynamodb
 pytz==2020.5              # via babel, delorean, flask-restful, google-api-core, lyft-ingest, lyft-regions-client, tzlocal
-pyyaml==5.4
+pyyaml==5.4.1
 rainbow-saddle==0.4.0
 redis==3.5.3
 requests==2.25.1          # via google-api-core, lyft-elasticsearch, lyft-idl, lyft-ratelimit, lyft-requests
