@@ -106,5 +106,5 @@ webargs==7.0.1
 werkzeug==1.0.1
 zipp==3.4.0               # via importlib-metadata
 
-pip==20.3.4
+pip==21.0
 setuptools==51.3.3
