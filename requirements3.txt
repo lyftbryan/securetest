@@ -107,4 +107,4 @@ werkzeug==1.0.1
 zipp==3.4.0               # via importlib-metadata
 
 pip==21.0.1
-setuptools==52.0.0
+setuptools==53.0.0
