@@ -34,7 +34,7 @@ freezegun==1.1.0
 gevent==21.1.2
 google-api-core==1.26.0   # via google-cloud-bigquery, google-cloud-core
 google-auth==1.27.0        # via google-api-core
-google-cloud-bigquery==2.9.0
+google-cloud-bigquery==2.10.0
 google-cloud-core==1.6.0  # via google-cloud-bigquery
 google-resumable-media==1.2.0  # via google-cloud-bigquery
 googleapis-common-protos==1.52.0  # via google-api-core, lyft-idl
