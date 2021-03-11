@@ -11,9 +11,9 @@ atomicwrites==1.4.0       # via pytest
 attrs==20.3.0             # via jsonschema, pytest
 babel==2.9.0              # via delorean, lyft-localization
 blinker==1.4
-boto3==1.17.25            # via lyft-ingest, lyft-s3, lyft-streamcheck
+boto3==1.17.26            # via lyft-ingest, lyft-s3, lyft-streamcheck
 boto==2.49.0
-botocore==1.20.25         # via boto3, lyft-elasticsearch, pynamodb, s3transfer
+botocore==1.20.26         # via boto3, lyft-elasticsearch, pynamodb, s3transfer
 cachetools==4.2.1         # via google-auth, lyft-public-api-lib
 certifi==2020.12.5        # via requests
 chardet==4.0.0            # via requests
@@ -74,7 +74,7 @@ parse-accept-language==0.1.2  # via lyft-localization
 phonenumbers==8.12.19     # via lyft-localization
 pillow==8.1.2
 pluggy==0.13.1             # via pytest
-protobuf==3.15.5          # via analyticsclient, flask-protobuf, google-api-core, googleapis-common-protos, grpcio-tools, lyft-idl, lyft-ingest, lyft-requests
+protobuf==3.15.6          # via analyticsclient, flask-protobuf, google-api-core, googleapis-common-protos, grpcio-tools, lyft-idl, lyft-ingest, lyft-requests
 psutil==5.8.0             # via rainbow-saddle
 py==1.10.0                 # via pytest
 pyasn1-modules==0.2.8     # via google-auth
