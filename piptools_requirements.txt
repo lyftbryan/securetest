@@ -6,4 +6,4 @@
 #
 
 pip==21.0.1
-setuptools==54.1.2
+setuptools==54.2.0
