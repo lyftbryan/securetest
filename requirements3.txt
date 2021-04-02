@@ -72,7 +72,7 @@ marshmallow==3.5.0
 more-itertools==7.2.0     # via pytest, zipp
 parse-accept-language==0.1.2  # via lyft-localization
 phonenumbers==8.10.22     # via lyft-localization
-pillow==5.0.0
+pillow==8.2.0
 pluggy==0.6.0             # via pytest
 protobuf==3.10.0          # via analyticsclient, flask-protobuf, google-api-core, googleapis-common-protos, grpcio-tools, lyft-idl, lyft-ingest, lyft-requests
 psutil==5.6.5             # via rainbow-saddle
