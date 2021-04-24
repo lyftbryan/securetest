@@ -5,5 +5,5 @@
 #    control run piptools.compile vehiclemetadata
 #
 
-pip==21.0.1
+pip==21.1
 setuptools==56.0.0
