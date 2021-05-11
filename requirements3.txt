@@ -29,7 +29,7 @@ flask-cors==3.0.10
 flask-protobuf==0.8.0     # via lyft-idl
 flask-restful==0.3.8
 flask-script==2.0.6
-flask==1.1.2
+flask==2.0.0
 freezegun==1.1.0
 gevent==21.1.2
 google-api-core==1.26.3   # via google-cloud-bigquery, google-cloud-core
