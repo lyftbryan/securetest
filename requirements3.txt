@@ -71,7 +71,7 @@ markupsafe==2.0.0         # via jinja2
 marshmallow==3.12.1
 more-itertools==8.7.0     # via pytest, zipp
 parse-accept-language==0.1.2  # via lyft-localization
-phonenumbers==8.12.22     # via lyft-localization
+phonenumbers==8.12.23     # via lyft-localization
 pillow==8.2.0
 pluggy==0.13.1             # via pytest
 protobuf==3.17.0          # via analyticsclient, flask-protobuf, google-api-core, googleapis-common-protos, grpcio-tools, lyft-idl, lyft-ingest, lyft-requests
