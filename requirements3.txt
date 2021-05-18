@@ -103,7 +103,7 @@ tzlocal==2.1            # via delorean
 ujson==4.0.2               # via lyft-ingest, lyft-stdlib
 urllib3==1.26.4           # via botocore, elasticsearch, lyft-elasticsearch, lyft-ingest, requests
 webargs==8.0.0
-werkzeug==2.0.0
+werkzeug==2.0.1
 zipp==3.4.1               # via importlib-metadata
 
 pip==21.1.1
