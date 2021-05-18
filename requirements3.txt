@@ -67,7 +67,7 @@ lyft-stats==1.2.4
 lyft-stdlib==1011.0.0
 lyft-streamcheck==0.2.15  # via lyft-ingest
 lyft-vehicles==2.3.0
-markupsafe==2.0.0         # via jinja2
+markupsafe==2.0.1         # via jinja2
 marshmallow==3.12.1
 more-itertools==8.7.0     # via pytest, zipp
 parse-accept-language==0.1.2  # via lyft-localization
