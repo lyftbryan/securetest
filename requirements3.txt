@@ -22,7 +22,7 @@ click==8.0.1                # via flask
 coverage==5.5           # via pytest-cov
 delorean==1.0.0           # via lyft-datetime
 docutils==0.17.1          # via botocore
-elasticsearch==7.12.1      # via lyft-elasticsearch
+elasticsearch==7.13.0      # via lyft-elasticsearch
 enum34==1.1.10             # via lyft-public-api-lib
 fast-distance==1.6.0      # via lyft-regions-client
 flask-cors==3.0.10
