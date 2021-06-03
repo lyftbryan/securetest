@@ -74,7 +74,7 @@ parse-accept-language==0.1.2  # via lyft-localization
 phonenumbers==8.12.24     # via lyft-localization
 pillow==8.2.0
 pluggy==0.13.1             # via pytest
-protobuf==3.17.1          # via analyticsclient, flask-protobuf, google-api-core, googleapis-common-protos, grpcio-tools, lyft-idl, lyft-ingest, lyft-requests
+protobuf==3.17.2          # via analyticsclient, flask-protobuf, google-api-core, googleapis-common-protos, grpcio-tools, lyft-idl, lyft-ingest, lyft-requests
 psutil==5.8.0             # via rainbow-saddle
 py==1.10.0                 # via pytest
 pyasn1-modules==0.2.8     # via google-auth
