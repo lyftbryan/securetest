@@ -45,7 +45,7 @@ hiredis==2.0.0
 humanize==3.9.0           # via delorean
 idna==3.2                 # via requests
 ijson==3.1.4
-importlib-metadata==4.6.0  # via jsonschema
+importlib-metadata==4.6.1  # via jsonschema
 itsdangerous==2.0.1       # via flask
 jinja2==3.0.1            # via flask
 jmespath==0.10.0           # via boto3, botocore
