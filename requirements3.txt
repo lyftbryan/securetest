@@ -33,8 +33,8 @@ flask==2.0.1
 freezegun==1.1.0
 gevent==21.1.2
 google-api-core==1.31.1   # via google-cloud-bigquery, google-cloud-core
-google-auth==1.33.1        # via google-api-core
-google-cloud-bigquery==2.22.1
+google-auth==1.34.0        # via google-api-core
+google-cloud-bigquery==2.23.0
 google-cloud-core==1.7.2  # via google-cloud-bigquery
 google-resumable-media==1.3.1  # via google-cloud-bigquery
 googleapis-common-protos==1.53.0  # via google-api-core, lyft-idl
