@@ -92,7 +92,7 @@ pyyaml==3.01
 rainbow-saddle==0.4.0
 redis==2.10.6
 requests==2.22.0          # via google-api-core, lyft-elasticsearch, lyft-idl, lyft-ratelimit, lyft-requests
-rsa==4.0                  # via google-auth
+rsa==4.9                  # via google-auth
 rtree==0.8.3              # via lyft-regions-client
 s3transfer==0.2.1         # via boto3
 shapely==1.6.4.post2      # via lyft-regions-client
